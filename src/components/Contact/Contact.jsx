@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
+
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-24">
       <div className="md:w-1/2 text-center md:text-left lg:ms-24">
@@ -10,6 +11,7 @@ const Contact = () => {
         <p className="text-lg mb-4">09909873234</p>
         <p className="text-lg mb-4">flavorLab@recipe.com</p>
       </div>
+      
       <div className="md:w-1/2">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjU1Mmfcx8usqAecc8NqsxzSSQvqMCeSBEIu-rXpxUlA&s" alt="Contact" className="rounded-full shadow-xl" />
       </div>
