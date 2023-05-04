@@ -8,12 +8,10 @@ const Register = () => {
     // console.log(user, createUser)
 
     const [error, setError] = useState('');
-    const [success, setSuccess] = useState('');
 
     const handleRegister = event => {
         event.preventDefault();
 
-        setSuccess(' ');
         setError('');
 
         const form = event.target;
@@ -25,7 +23,6 @@ const Register = () => {
         console.log(name, email, password, photo)
 
         if (password.length < 6) {
-
             setError('Password should contain 6 character');
             return;
         }
@@ -39,11 +36,11 @@ const Register = () => {
                     displayName: name, photoURL: photo
                 }).then((res) => {
                     console.log(res.user.photoURL, res.user)
-                    alert('user created and updated')
+                    // alert('user created and updated')
                 }).catch((error) => {
-                    console.error(error.message)
+                    // console.error(error.message)
                     setError(error.message)
-                    alert(error.message)
+                    // alert(error.message)
                 });
                 form.reset();
             })
@@ -88,7 +85,9 @@ const Register = () => {
                                 <Link to='/login' className="label-text-alt link link-hover text-orange-600">Already have an account? Login</Link>
                             </label>
                         </div>
+                        <p className='text-red-600 text-center'>{error && error}</p>
                         <div className="form-control mt-6">
+                            
                             <button className="btn btn-primary bg-orange-500 hover:bg-orange-700">Sign Up</button>
                         </div>
                     </form>

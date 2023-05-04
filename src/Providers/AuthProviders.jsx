@@ -10,7 +10,7 @@ const githubProvider = new GithubAuthProvider();
 // const provider = new firebase.auth.GoogleAuthProvider();
 
 
-const AuthProviders = ({children}) => {
+const AuthProviders = ({ children }) => {
 
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true)
@@ -30,10 +30,13 @@ const AuthProviders = ({children}) => {
     }
 
     const googleLogin = () => {
-            return signInWithPopup(auth, googleProvider)
+        setLoading(true)
+        return signInWithPopup(auth, googleProvider)
+
     }
     const githubLogin = () => {
-            return signInWithPopup(auth,githubProvider)
+        setLoading(true)
+        return signInWithPopup(auth, githubProvider)
     }
 
     useEffect(() => {
@@ -59,7 +62,7 @@ const AuthProviders = ({children}) => {
     }
 
     return (
-        
+
         <AuthContext.Provider value={authInfo}>
             {children}
         </AuthContext.Provider>

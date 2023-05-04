@@ -9,7 +9,7 @@ const ChefsCard = () => {
 
   useEffect(() => {
     isLoading(true);
-    fetch('https://flavor-lab-server-noushin-tabassum-elina.vercel.app')
+    fetch('https://flavor-lab-server.vercel.app/chefs')
       .then(res => res.json())
       .then(data => {
         setChefs(data.chefs);

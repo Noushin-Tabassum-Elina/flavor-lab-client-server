@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         {
           path: '/chefs/:id',
           element: <PrivateRoute><Chef></Chef></PrivateRoute>,
-          loader: ({params}) => fetch(`https://flavor-lab-server-noushin-tabassum-elina.vercel.app/chefs/${params.id}`)
+          loader: ({params}) => fetch(`https://flavor-lab-server.vercel.app/chefs/${params.id}`)
         },
         {
           path: '/',
