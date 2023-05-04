@@ -62,6 +62,7 @@ const Login = () => {
 
 
   return (
+
     <div className="hero min-h-screen bg-base-200 mt-8">
       <div className="hero-content">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-xl bg-base-100">
@@ -71,6 +72,7 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
+              
               <input type="email" name='email' placeholder="email" className="input input-bordered" required/>
             </div>
             <div className="form-control">
