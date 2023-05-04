@@ -13,7 +13,9 @@ const About = () => {
 
                 </div>
             </div>
+            
             <div >
+
                 <h1 className='text-center font-bold text-4xl mt-10'>People's Engagement in Our Website</h1>
                 <div className="stats stats-vertical lg:stats-horizontal shadow flex justify-center items-center mt-10 mx-28">
 
