@@ -24,7 +24,9 @@ const Banner = () => {
           <h1 className='font-serif text-xl lg:text-4xl '>A place full to talented master chef</h1>
           <h2 className='font-serif text-xl lg:text-4xl'>And their excellent recipes</h2>
         </div>
+
         </div> 
+        
         <div id="slide3" className="carousel-item relative w-full">
           <img src="https://as2.ftcdn.net/v2/jpg/02/43/11/95/1000_F_243119507_sFqCazZfPjdC0EgHLJZ7ByUUJLDmweLf.jpg" className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
