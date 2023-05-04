@@ -9,7 +9,7 @@ const ChefsCard = () => {
 
   useEffect(() => {
     isLoading(true);
-    fetch('http://localhost:5000/chefs')
+    fetch('https://flavor-lab-server-noushin-tabassum-elina.vercel.app')
       .then(res => res.json())
       .then(data => {
         setChefs(data.chefs);
@@ -21,7 +21,7 @@ const ChefsCard = () => {
   return (
 
     <div>
-      
+
       <h1 className='text-center font-bold text-4xl mt-16 mb-12'>Meet Our CHEFS!!</h1>
       {loading && <progress className="progress w-56"></progress>}
       <div className='grid grid-cols-1 lg:grid-cols-3 m-8 gap-6 '>
