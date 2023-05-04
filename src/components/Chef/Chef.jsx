@@ -31,12 +31,15 @@ const Chef = () => {
                     <p><b>Years of experience: </b> {chef.chef_experience}</p>
                     <p><b>Number of recipe: </b> {chef.recipe_number}</p>
                     <p><b>Like: </b>{chef.likes}</p>
+                    
                     <div>
                         <button disabled={isFavorite} onClick={handleFavoriteClick} className="btn btn-outline btn-secondary m-4"><AiOutlineHeart /></button>
                     </div>
                 </div>
+
             </div>
             <div>
+
                 <div>
                     <h1 className='text-4xl font-bold text-center my-8'>CheckOut our Chef's Special recipe</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-8 lg:ms-48">
