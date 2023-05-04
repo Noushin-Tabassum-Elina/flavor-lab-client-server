@@ -4,7 +4,9 @@ import React from 'react';
 const BlogPost = () => {
     return (
        <Document>
+        
         <Page>
+
             <Text>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10  lg:ms-32 mt-10'>
                 <div className="card w-96 bg-base-100 shadow-xl">
