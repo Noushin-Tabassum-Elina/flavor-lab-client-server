@@ -25,6 +25,7 @@ const Register = () => {
         console.log(name, email, password, photo)
 
         if (password.length < 6) {
+
             setError('Password should contain 6 character');
             return;
         }
@@ -52,6 +53,7 @@ const Register = () => {
     }
 
     return (
+
         <div className="hero min-h-screen bg-base-200 mt-8">
             <div className="hero-content">
 
@@ -64,6 +66,7 @@ const Register = () => {
                             </label>
                             <input type="text" name='name' placeholder="name" className="input input-bordered" required />
                         </div>
+                        
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Photo Url</span>
